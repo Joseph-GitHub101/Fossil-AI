@@ -1,2 +1,4 @@
-# Fossil-AI
+# Fossil AI
+
 Neural network to identify and localize fossils from New Jersey.
+I will use transfer learning (using the model weights from https://www.cambridge.org/core/journals/paleobiology/article/automatic-taxonomic-identification-based-on-the-fossil-image-dataset-415000-images-and-deep-convolutional-neural-networks/4863E2FDE20D6115415EE5FE232B9DCD) along with finetuning to identify pictures of fossils from NJ. This will involve using a neural architecture search using AutoKeras, and then a hyperparameter optimization method using HParams. The localization method will involve the use of bounding boxes drawn around the fossils and an object detection algorithm such as either YOLO or faster RCNN. I will likely experiment with both in order to find which one fits the trade off between speed and accuracy the best.
